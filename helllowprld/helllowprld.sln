@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "helllowprld\HelloWorld.csproj", "{C1C9712B-75FD-4BB3-AA9F-1978927370FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-DEMO", "..\MVC-DEMO\MVC-DEMO.csproj", "{724A2DF3-09A3-40A8-BBED-8505FA56F8C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1C9712B-75FD-4BB3-AA9F-1978927370FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C9712B-75FD-4BB3-AA9F-1978927370FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C9712B-75FD-4BB3-AA9F-1978927370FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C9712B-75FD-4BB3-AA9F-1978927370FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724A2DF3-09A3-40A8-BBED-8505FA56F8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724A2DF3-09A3-40A8-BBED-8505FA56F8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724A2DF3-09A3-40A8-BBED-8505FA56F8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724A2DF3-09A3-40A8-BBED-8505FA56F8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8124A6F7-A1BC-4018-9A6E-A8106F39F91E}
+	EndGlobalSection
+EndGlobal
