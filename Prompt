@@ -1,0 +1,160 @@
+Here's your master prompt — structured for a full ASP.NET Core MVC Employee Management System, designed to be opened directly in Visual Studio or VS Code after generation.
+
+---
+
+## Master Prompt — Employee Management System (ASP.NET Core MVC)
+
+```
+You are a senior ASP.NET Core developer. Build a complete, production-ready 
+Employee Management System as a single ASP.NET Core MVC project (.NET 8).
+
+---
+
+TECH STACK:
+- ASP.NET Core 8 MVC
+- Entity Framework Core (SQL Server / SQLite)
+- Identity Framework (Authentication + Role-based Authorization)
+- Bootstrap 5 + custom CSS
+- JavaScript (vanilla, no frameworks)
+- Razor Views (.cshtml)
+
+---
+
+PROJECT STRUCTURE:
+EmployeeManagementSystem/
+├── Controllers/
+│   ├── AccountController.cs
+│   ├── DashboardController.cs
+│   ├── EmployeeController.cs
+│   ├── DepartmentController.cs
+│   ├── AttendanceController.cs
+│   ├── LeaveController.cs
+│   └── PayrollController.cs
+├── Models/
+│   ├── Employee.cs
+│   ├── Department.cs
+│   ├── Attendance.cs
+│   ├── LeaveRequest.cs
+│   └── Payroll.cs
+├── ViewModels/
+│   ├── LoginViewModel.cs
+│   ├── RegisterViewModel.cs
+│   ├── EmployeeViewModel.cs
+│   └── DashboardViewModel.cs
+├── Data/
+│   └── ApplicationDbContext.cs
+├── Views/
+│   ├── Shared/
+│   │   ├── _Layout.cshtml
+│   │   └── _Sidebar.cshtml
+│   ├── Dashboard/
+│   ├── Employee/
+│   ├── Department/
+│   ├── Attendance/
+│   ├── Leave/
+│   └── Payroll/
+├── wwwroot/
+│   ├── css/custom.css
+│   └── js/app.js
+├── Program.cs
+├── appsettings.json
+└── EmployeeManagementSystem.csproj
+
+---
+
+FEATURES TO IMPLEMENT:
+
+1. Authentication & Authorization
+   - Login / Logout
+   - Role-based: Admin, HR, Employee
+   - Seed default Admin user on startup
+
+2. Dashboard
+   - Total Employees count
+   - Department-wise breakdown
+   - Pending Leave Requests
+   - Today's Attendance summary
+   - Recent activity feed
+
+3. Employee Management (Full CRUD)
+   - Add / Edit / Delete / View Employee
+   - Fields: Name, Email, Phone, DOB, Gender, 
+     Department, Designation, JoiningDate, 
+     Salary, ProfilePhoto, Status (Active/Inactive)
+   - Search + Filter by Department / Status
+   - Pagination
+
+4. Department Management (Full CRUD)
+   - Department Name, Manager, Description
+   - Employee count per department
+
+5. Attendance Management
+   - Mark attendance: Present / Absent / Half-Day
+   - Filter by date range and department
+   - Monthly attendance report per employee
+
+6. Leave Management
+   - Employee submits leave request (from-to date, reason, type)
+   - Leave Types: Casual, Sick, Annual
+   - HR/Admin: Approve / Reject with remarks
+   - Leave balance tracker per employee
+
+7. Payroll (Basic)
+   - Auto-calculate based on Salary + Attendance days
+   - Deductions: Absent days
+   - Generate monthly payslip view per employee
+
+---
+
+DATABASE:
+- Use SQLite for local dev (easy setup, no SQL Server needed)
+- EF Core Migrations
+- Seed data: 2 departments, 5 employees, 1 Admin user
+- Connection string in appsettings.json
+
+---
+
+UI REQUIREMENTS:
+- Dark sidebar layout (left nav)
+- Clean Bootstrap 5 tables with action buttons
+- Responsive (mobile-friendly)
+- Toast notifications for success/error actions
+- Modal popups for quick confirmations (delete)
+- Status badges (Active = green, Inactive = red)
+- Dashboard uses card widgets with counts
+
+---
+
+OUTPUT FORMAT:
+- Provide complete file-by-file code
+- Each file clearly labeled with its path
+- Program.cs must include:
+  * EF Core setup
+  * Identity setup
+  * Role seeding
+  * Migration auto-apply on startup
+- All Razor views must have proper @model directives
+- Controllers must have [Authorize] with role filters
+- All forms must use ASP.NET Tag Helpers
+- No placeholder code — everything must be functional
+
+---
+
+OPENING INSTRUCTIONS (include at end):
+1. dotnet restore
+2. dotnet ef database update
+3. dotnet run
+4. Open https://localhost:5001
+5. Default login: admin@ems.com / Admin@123
+```
+
+---
+
+**How to use this:**
+
+- Paste into Claude (new chat) or ChatGPT-4o
+- It will generate file-by-file
+- Copy each file into the correct folder in VS / VS Code
+- Run the 3 commands at the bottom — project launches directly
+
+**If you want to extend it later**, just append to the prompt: `"Also add: [feature]"` — the structure is modular enough to handle it cleanly.
